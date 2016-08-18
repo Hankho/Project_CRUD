@@ -12,7 +12,7 @@ def new
 end
 def create
     @event = Event.new(params.require(:event).permit(:name,:description))
-    @event.save
+    @event.save 
     redirect_to  :action => :show , :id => @event
 end
 
