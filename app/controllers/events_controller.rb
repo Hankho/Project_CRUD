@@ -29,7 +29,7 @@ end
 def update
 	
 		
-	@event.update(params_event)
+	@event.update(params_event) 
 	flash[:notice]="更新成功"
 	@event.update(params.require(:event).permit(:name,:descripiton))
 end
